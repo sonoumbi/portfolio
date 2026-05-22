@@ -55,6 +55,8 @@
     }
 
     .main{
+        container-type: inline-size;
+        max-width: 2000px;
         margin-top: 1.5dvw;
         min-height: calc(100dvh - 1.5dvw);
         height: fit-content;
@@ -64,7 +66,7 @@
         gap: 1.5dvw;
     }
 
-    div{
+    .main>*{
         line-height: 0.8;
         display: inline;
         font-size: 17.5cqw;
@@ -102,7 +104,7 @@
     }
 
     .description{
-        font-size: 6dvw;
+        font-size: 6cqw;
     }
 
     .social{
@@ -178,7 +180,7 @@
     .social:hover{
         color: black;
         filter: brightness(0);
-        font-size: 102%;
+        transform: scale(102%);
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
     }
@@ -186,7 +188,7 @@
     .title_link:hover{
         color: black;
         filter: brightness(0);
-        font-size: 102%;
+        transform: scale(102%);
         transition-duration: 0.2s;
     }
 </style>
