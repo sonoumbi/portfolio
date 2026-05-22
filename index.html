@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./index.js"></script>
+    <title>sonoumbi</title>
+</head>
+<body>
+    <div class="main">
+        <div>CIAO!!!</div>
+        <div>SONOUMBI</div>
+        <div class="myself"><img src="./img/myself.png" alt=""></div>
+        <div>E STUDIO</div>
+        <div>DESIGN</div>
+        <div>@POLITO</div>
+        <div class="space" ></div>
+        <div class="space" id="space2"></div>
+        <div class="social insta">
+            <a href="http://instagram.com/sonoumbi" target="_blank" rel="noopener noreferrer">INSTA</a> 
+            <img class="arrow_outward" src="./svg/arrow_outward_24dp_E3E3E3_FILL0_wght600_GRAD0_opsz24.svg" alt="">
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/@sonoumbi" target="_blank" rel="noopener noreferrer">YOUTUBE</a> 
+            <img class="arrow_outward" src="./svg/arrow_outward_24dp_E3E3E3_FILL0_wght600_GRAD0_opsz24.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+        height: fit-content;
+        width: 100dvw;
+        font-family: "Helvetica";
+        overflow: scroll;
+        background-color: rgb(255, 251, 25);
+        color: rgb(43, 45, 33);
+        
+    }
+
+    .main{
+        margin-top: 1.5dvw;
+        min-height: calc(100dvh - 1.5dvw);
+        height: fit-content;
+        width: 97dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5dvw;
+    }
+
+    div{
+        line-height: 0.8;
+        display: inline;
+        font-size: 17.5cqw;
+        background-color: bl;
+    }
+
+    .myself{
+        display: flex;
+        justify-content: end;
+        min-height: 20px;
+        height: 30dvw;
+        max-height: 500px;
+        width: auto;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .space{
+        height: 14dvw;
+    }
+
+    .link{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5dvw;
+    }
+    
+    .title_link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .description{
+        font-size: 6dvw;
+    }
+
+    .social{
+        display: flex;
+        align-items: flex-start;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .social>*{
+        text-decoration: none;
+    }
+
+    button{
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        text-decoration: underline;
+        border: none;
+    }
+
+    button.selected{
+        text-decoration: none;
+    }
+
+    a{
+        color: inherit;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .projectImage{
+        width: 100%;
+        height: auto;
+        transition: 0.2s ease-in-out;
+    }
+
+    .projectImage:hover{
+        transform: translateY(-1%);
+        transition: 0.2s ease-in-out;
+    }
+
+    .aboutMeImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .social.insta{
+        margin-top: auto;
+    }
+
+    .arrow_outward{
+        filter: brightness(0) saturate(100%) invert(13%) sepia(21%) saturate(585%) hue-rotate(30deg) brightness(96%) contrast(89%);
+        line-height: 0.63;
+        height: 12cqw;
+    }
+
+    .arrow_down{
+        filter: brightness(0) saturate(100%) invert(13%) sepia(21%) saturate(585%) hue-rotate(30deg) brightness(96%) contrast(89%);
+        line-height: 0.63;
+        width: 12cqw;
+    }
+
+    .arrow_up{
+        filter: brightness(0) saturate(100%) invert(13%) sepia(21%) saturate(585%) hue-rotate(30deg) brightness(96%) contrast(89%);
+        line-height: 0.63;
+        width: 12cqw;
+        rotate: 180deg;
+    }
+
+    .social:hover{
+        color: black;
+        filter: brightness(0);
+        font-size: 102%;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .title_link:hover{
+        color: black;
+        filter: brightness(0);
+        font-size: 102%;
+        transition-duration: 0.2s;
+    }
+</style>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./project_test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">TICKETTREAT</div>
+        <div>Il progetto nasce da un lavoro scolastico durante il secondo periodo del primo anno di Università. Si chiedeva di progettare un packaging per bonbon, che girasse attorno al tema del dono. Il politecnico si concentra molto sulla sostenibilità e il fine vita, quindi era caldamente consigliato utilizzare materiali riciclabili e forme semplici </div>
+        <img src="./img/ticketreat_moodboard.png" id="tickettreat_moodboard">
+        <div>Già dalle primissime ricerche sul concept del packaging, mi son concentrato sulla trasformazione, ovvero come dare nuova vita alla confezione dopo il suo utilizzo. 
+             Dopo un po' di riflessioni e domande ad amici e compagni di corso, ho capito che le persone conservano oggetti in carta (il materiale che avevo scelto), per decorazione o perché son legati emotivamente all'oggetto per un'esperienza personale vissuta</div>
+        <img src="./img/ticketreat_esempio.png" id="tickettreat_esempio">
+        <div>Cosa c'è allora di più significativo e legato da un esperienza di un biglietto? dopo la prima revisione con i professori, abbiamo capito che bisognava trasformare qualcosa di già esistente in pacchetto piuttosto che viceversa.
+Con il gruppo di lavoro abbiamo iniziato a fare ricerca sulle realtà che vendevano biglietti, che tipo di biglietti, misure, colori, tipi di carta.</div>
+        <img src="./img/ticketreat_prima_tavola.png" id="tickettreat_prima_tavola">
+        <div>La prima scheda tecnica che abbiamo creato definiva il nome e l'utilizzo: abbiamo puntato sull'opzione regalo di molti negozi online di biglietti, riprogettandola graficamente per trasformarla in un pacchetto fai da te.
+                 Il foglio da stampare a casa ha delle linee di piega e taglio semplice che permettono all'utente di crearsi da solo il regalo per il suo caro.
+                 Mancavano però ancora molte cose</div>
+        <img src="./img/ticketreat_seconda_tavola.png" id="tickettreat_seconda_tavola">
+        <div>Con la seconda scheda abbiamo definito la forma del pacchetto e il preciso schema di pieghe, oltre a definire il tipo di bonbon da inserire: i jelly beans!
+             Colorati, leggeri, buoni, erano perfetti per un pacchetto piccolo. </div>
+        <img src="./img/ticketreat_tavola_finale.png" id="tickettreat_tavola_finale">
+        <div>Al pacchetto mancava la chiusura, e cercando come farla ci siamo accorti che una di queste ricordava molto il gesto dell'abbraccio: due linguette entrano all'interno dell'estremità del pacchetto, sigillandolo.
+             La grafica, che dovevamo rimanere semplice per evitare lo spreco di inchiostro, si è evoluta di conseguenza.
+             Ho deciso di creare otto personaggi che facessero intuire il tipo di evento del biglietto, attraverso i loro vestiti, e li ho colorati con colori neutrali e accesi, riprenendo le forme dei jelly beans.</div>
+        <img src="./img/ticketreat_foto.png" alt="">
+        <img src="./img/ticketreat_abbracciatori.svg" alt="">
+        <a href="../../index.html" class="title">TORNA</a>
+    </div>
+</body>
+</html>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+        height: fit-content;
+        width: 100dvw;
+        font-family: "Helvetica";
+        overflow: scroll;
+        background-color: rgb(255, 251, 25);
+        color: rgb(43, 45, 33);
+        
+    }
+
+    .main{
+        margin-top: 1.5dvw;
+        min-height: calc(100dvh - 1.5dvw);
+        height: fit-content;
+        width: 97dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5dvw;
+        font-size: 5dvw;
+        margin-bottom: 1.5dvw;
+    }
+
+    div{
+        line-height: 0.95;
+
+    }
+
+    .title{
+        font-size: 14cqw;
+        line-height: 0.8;
+        display: inline;
+        background-color: bl;
+    }
+
+    #tickettreat_moodboard{
+        width: 50%;
+        min-width: 400px;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    #tickettreat_esempio{
+        width: 50%;
+        min-width: 400px;
+        height: auto;
+    }
+
+    #tickettreat_prima_tavola{
+        width: 60%;
+        min-width: 400px;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    #tickettreat_seconda_tavola{
+        width: 60%;
+        min-width: 400px;
+        height: auto;
+    }
+
+    #tickettreat_tavola_finale{
+        width: 60%;
+        min-width: 400px;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    a{
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        text-decoration: underline;
+        border: none;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover{
+        color: black;
+        transform: scale(102%);
+        transition: all 0.2s ease-in-out;
+    }
+</style>

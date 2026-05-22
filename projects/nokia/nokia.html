@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./project_test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">PUBBLICITA'</div>
+        <div class="title">PER NOKIA</div>
+        <div class="title">N85</div>
+        <div>Il progetto nasce da un lavoro scolastico durante il primo periodo del primo anno di Università. Si chiedeva un'analisi di un telefono anni 2000, che prevedeva la consegna di tavole tecniche e rappresentazioni outline, oneline, 3d e flat in illustrator. Oltre a questo, si chiedeva di concepire una semplice campagna pubblicitaria, composta da una moodboard e quattro post di instagram, stesso stile e messaggio.</div>
+        <img src="./img/nokia_telefono.png" id="nokia_telefono">
+        <div>E' stato scelto il nokia n85 (l'unico che avevamo disponibile). 
+             Dai primi disegni era chiaro che ciò che separava il telefono dagli altri erano due cose: i tasti verde e rosso per le chiamate e la capacità di diventare un mp3 player se si slidava lo schermo verso il basso. </div>
+        <img src="./img/nokia_prima_moodboard.png" id="nokia_prima_moodboard">
+        <div>Nasce così una primissima moodboard, che definisce i due colori principali e i due mondi che si uniscono nello stesso telefono: lavoro e musica. 
+             Con questa idea, dopo i primi confronti con il gruppo il primo tentativo di pubblicità consisteva nel trasformarci nel telefono vero e proprio. 
+             Vestiti eleganti e con dei fazzoletti nelle tasche, abbiamo provato a sintetizzare tutto ciò che il telefono voleva comunicare.
+        </div>
+        <img src="./img/nokia_den_ride.png" id="nokia_den_ride">
+        <div>Inutile dire che le nostre capacità fotografiche limitivano un po' la riuscita del progetto...
+             Il telefono si vedeva poco, non avevamo posti dove fotografare, era complesso tirar fuori 4 post da queste foto.
+             Ci siamo ritrovati per discutere nuovamente sul da farsi, e abbiamo deciso di puntare sulla dualità musica-lavoro e sul fatto che il telefono avesse uno schermo ad alta definizione. 
+             Ho ricreato così la moodboard, avendo come base i tre colori primari
+        </div>
+        <img src="./img/nokia_seconda_moodboard.png" id="nokia_seconda_moodboard">
+        <div>Dopo vari tentativi, ho deciso di rendere il tutto molto più giocoso e pop, utilizzando cut-out e colori sgargianti. 
+             I primi tentativi per le pubblicità però erano vuoti e senza alcuna anima
+        </div>
+        <img src="./img/nokia_prova_pubblicità.png" id="nokia_prova_pubblicità">
+        <div>Sembra di star guardando una pessima pubblicità di prodotto scam e fake. Le immagini stock però erano la nostra unica strada e il la foto del telefono doveva essere presente nel post.
+             Mi piacevano però i cavetti delle cuffie, che davano un po' di movimenti in quel mortorio blu e azzurro. 
+             Ho quindi deciso di rendere centrali i cavetti e utilizzarli per far passare l'idea di una doppia vita, tra lavoro e tempo libero.
+        </div>
+        <img src="./img/nokia_pubblicità_1.png" alt="">
+        <img src="./img/nokia_pubblicità_2.png" alt="">
+        <img src="./img/nokia_pubblicità_3.png" alt="">
+        <img src="./img/nokia_pubblicità_4.png" alt="">
+        <a href="../../index.html" class="title">TORNA</a>
+    </div>
+</body>
+</html>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+        height: fit-content;
+        width: 100dvw;
+        font-family: "Helvetica";
+        overflow: scroll;
+        background-color: rgb(255, 251, 25);
+        color: rgb(43, 45, 33);
+        
+    }
+
+    .main{
+        margin-top: 1.5dvw;
+        min-height: calc(100dvh - 1.5dvw);
+        height: fit-content;
+        width: 97dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5dvw;
+        font-size: 5dvw;
+        margin-bottom: 1.5dvw;
+    }
+
+    div{
+        line-height: 0.95;
+
+    }
+
+    .title{
+        font-size: 14cqw;
+        line-height: 0.8;
+        display: inline;
+        background-color: bl;
+    }
+
+    #nokia_telefono{
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    #nokia_prima_moodboard{
+        width: 50%;
+    }
+
+    #nokia_den_ride{
+        width: 60%;
+        align-self: flex-end;
+    }
+
+    #nokia_seconda_moodboard{
+        width: 60%;
+    }
+
+    #nokia_prova_pubblicità{
+        width: 60%;
+        align-self: flex-end;
+    }
+
+    a{
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        text-decoration: underline;
+        border: none;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover{
+        color: black;
+        transform: scale(102%);
+        transition: all 0.2s ease-in-out;
+    }
+</style>

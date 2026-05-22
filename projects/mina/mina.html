@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./project_test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">CALENDARIO</div>
+        <div class="title">MINA</div>
+        <div>
+            Il progetto nasce da un lavoro scolastico durante il primo periodo del primo anno di Università. Si chiedeva di progettare e costruire autonomamente un calendario perpetuo in legno del territorio, semplice ma funzionale, avendo come ispirazioni i calendari timor e bilancia di Enzo Mari. 
+        </div>
+        <div class="img_container_sketch">
+            <img src="./img/mina_sketch_1.png">
+            <img src="./img/mina_sketch_2.png">
+        </div>
+        <div class="img_container_sketch">
+            <img src="./img/mina_sketch_3.png">
+        </div>
+        <div>
+            Il centro del progetto doveva essere il giunto per forma, da integrare nel modo più interessante e innovativo possibile.
+            Tra i primi sketch che abbiamo disegnato, solo uno è passato alla prima revisione. Era un calendario che ricordava la punta di una matita, con un supporto inferiore per una matita.
+            Dalla revisione è uscita l'idea che la matita potesse diventare parte del calendario, non solo un accessorio che ne definiva il target di utilizzo. 
+        </div>
+        <div class="img_container_disegnini">
+            <img src="./img/mina_disegnino_1.png" class="disegnino">
+            <img src="./img/mina_disegnino_2.png" class="disegnino">
+            <img src="./img/mina_disegnino_3.png" class="disegnino">
+        </div>
+        <div>
+            Dopo svariati incontri con il gruppo e un'altra serie di sketch, si è deciso che la matita dovesse essere un componente centrale del meccanismo di blocco.
+            Quando viene estratta dal calendario, l'attrito tra i vari quadranti e la staffa centrale rende impossibile settare una data specifica. La matita blocca la staffa rendendo utilizzabile il calendario. 
+        </div>
+        <div class="img_container_costruzione">
+            <img src="./img/MINA_costruzione.png" alt="">
+            <img src="./img/MINA_costruzione_2.png" alt="">
+            <img src="./img/mina_costruzione_3.png" alt="">
+        </div>
+        <div>
+            Siamo quindi passati alla costruzione vera e propria: utilizzando il laboratorio del politecnico, abbiamo utilizzato 3 tipi di legni diversi per i vari componenti (abete, balsa e faggio).
+            La base del calendario da due pezzi ad incastro è diventata un pezzo unico, rendendo ulteriormente più essenziale la forma complessiva.
+        </div>
+        <img src="./img/mina_vera_foto_1.png" alt="">
+        <img src="./img/mina_vera_foto_2.png" alt="">
+        <img src="./img/mina_vera_foto_3.png" alt="">
+        <a href="../../index.html" class="title">TORNA</a>
+    </div>
+</body>
+</html>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+        height: fit-content;
+        width: 100dvw;
+        font-family: "Helvetica";
+        overflow: scroll;
+        background-color: rgb(255, 251, 25);
+        color: rgb(43, 45, 33);
+        
+    }
+
+    .main{
+        margin-top: 1.5dvw;
+        min-height: calc(100dvh - 1.5dvw);
+        height: fit-content;
+        width: 97dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5dvw;
+        font-size: 5dvw;
+        margin-bottom: 1.5dvw;
+    }
+
+    div{
+        line-height: 0.95;
+
+    }
+
+    .title{
+        font-size: 14cqw;
+        line-height: 0.8;
+        display: inline;
+        background-color: bl;
+    }
+
+    .img_container_sketch{
+        height: fit-content;
+        display: flex;
+        gap: 1.5dvw;
+        justify-content: end;
+    }
+
+    .img_container_sketch>*{
+        width: 40%;
+    }
+
+    .img_container_disegnini{
+        height: fit-content;
+        display: flex;
+        gap: 1.5dvw;
+        justify-content: start;
+    }
+
+    .img_container_disegnini>*{
+        width: 30%;
+    }
+
+    .img_container_costruzione{
+        height: fit-content;
+        display: flex;
+        gap: 1.5dvw;
+        justify-content: end;
+    }
+
+    .img_container_costruzione>*{
+        width: 30%;
+    }
+
+    a{
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        text-decoration: underline;
+        border: none;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover{
+        color: black;
+        transform: scale(102%);
+        transition: all 0.2s ease-in-out;
+    }
+</style>
