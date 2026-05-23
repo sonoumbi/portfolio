@@ -20,7 +20,7 @@ const projectImage = (isToggled,link, imageLink) => {
 const aboutMeDescription = (isToggled) => {
     return div(
             {style: "line-height: 0.95em;", class : () => isToggled.val? "view description" : "hide" },
-            "Sono Umberto Zucchetti, sono nato a Brescia e mi il mondo del design. Dopo anni di scuola improntata all'ambito scientifico, ho iniziato ad interessarmi al mondo grafico, per poi passare al design del prodotto, tanto da iscrivermi al politecnico di Torino (starei studiando ingegneria informatica altrimenti). Sono una persona molto curiosa, che cambia interesse ogni due settimane e che si concentra su una singola cosa con molto fatica, ma che è sempre pronta e volenterosa di fare nuove esperienze e di mettersi in gioco. Il mio sogno è di poter progettare liberamente, seguendo ciò che sento e comprendo del mondo."
+            "Sono Umberto Zucchetti, sono nato a Brescia e mi appassiona il mondo del design. Dopo anni di scuola improntata all'ambito scientifico, ho iniziato ad interessarmi al mondo grafico, per poi passare al design del prodotto, tanto da iscrivermi al politecnico di Torino (starei studiando ingegneria informatica altrimenti). Sono una persona molto curiosa, che cambia interesse ogni due settimane e che si concentra su una singola cosa con molto fatica, ma che è sempre pronta e volenterosa di fare nuove esperienze e di mettersi in gioco. Il mio sogno è di poter progettare liberamente, seguendo ciò che sento e comprendo del mondo."
             )
 }
 
